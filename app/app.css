@@ -1,0 +1,68 @@
+/* app css stylesheet */
+body {
+  padding-top: 70px;
+}
+
+.navbar-brand {
+  padding: 0px;
+  margin-top: 0px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar-brand>li>a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  margin-right: 14px;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.jumbotron {
+  background-image: url('images/killing-season-background.jpg');
+  color: white;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.row-eq-height .col-md-4 .panel {
+  height: 100%;
+}
