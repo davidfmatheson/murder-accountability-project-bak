@@ -1,11 +1,6 @@
 /* app css stylesheet */
 body {
   padding: 70px 0;
-  background: #99CCFF; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#99CCFF, #000000); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#99CCFF, #000000); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#99CCFF, #000000); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#99CCFF, #000000); /* Standard syntax (must be last) */ 
 }
 
 .panel-title > a::before {
@@ -106,4 +101,16 @@ body {
 
 .carousel-inner .item {
   margin-left: 200px;
+}
+
+.filter select {
+  width: 200px;
+}
+
+.result {
+  width: 200px;
+}
+
+.top5 {
+  margin-top:5px;
 }

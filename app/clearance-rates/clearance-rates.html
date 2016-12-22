@@ -1,0 +1,37 @@
+<div class="page-header">
+  <h1>Clearance Rates</h1>
+</div>
+<div class="filters row">
+  <div class="filter col-sm-3">
+    <p>State</p>
+    <select ng-model="selectedState" ng-options="state.name for state in states" ng-change="stateChanged(selectedState)">
+      <option value="">-- All states --</option>
+    </select>
+  </div>
+  <div class="filter col-sm-3">
+    <p>County</p>
+    <select ng-model="selectedCounty" ng-options="county.name for county in counties" ng-change="countyChanged(selectedState, selectedCounty)">
+      <option value="">-- All counties --</option>
+    </select>
+  </div>
+  <div class="filter col-sm-3">
+    <p>Agency</p>
+    <select ng-model="selectedAgency" ng-options="agency.name for agency in agencies" ng-change="agencyChanged(selectedState, selectedCounty, selectedAgency)">
+      <option value="">-- All agencies --</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+</div>
+<div class="row top5">
+  <div class="col-sm-3">
+    <button class="btn btn-danger result" type="button">Homicides: <span class="badge">{{totalHomicides | number}}</span></button>
+  </div>
+  <div class="col-sm-3">
+    <button class="btn btn-primary result" type="button">Clearances: <span class="badge">{{totalClearances | number}}</span></button>
+  </div>
+  <div class="col-sm-3">
+    <button class="btn btn-success result" type="button">Percent Solved: <span class="badge">{{percentSolved | percentage:2}}</span></button>
+  </div>
+</div>
+<div google-chart chart="myChartObject" style="height:600px; width:100%;"></div>
